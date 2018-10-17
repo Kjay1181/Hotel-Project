@@ -5,7 +5,7 @@
   <script>
     function remove(){
   //pick the first thing to remove
-  var elim= document.getElementById('p')[0];//zero is the index position of the first paragraph
+  var elim= document.getElementById('p');//zero is the index position of the first paragraph
  //get the parent of the thing we are going to eliminate
   var container= elim.parentNode;
   //remove the child from the parent
@@ -13,5 +13,7 @@
 }
   </script>
  <h1 id= "p">hello</h1>
+  <h1 id= "p">hello</h1>
+   <h1 id= "p">hello</h1>
  <button onclick="remove()">Remove</button>
 </body>
