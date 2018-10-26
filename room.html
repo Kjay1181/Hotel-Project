@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+      #one{
+        background-color:red;
+        height:500px;
+        width:500px;
+      }
+    </style>
+  </head>
+
+<body>
+  <div id="one">
+  <input type="text" id="userInput">
+  <button onclick="addName()">Add Name</button>
+  <button onclick="removeName()">Remove name</button>
+<p id="results"></p>
+</div>
+<script>
+  var fruits = [];
+
+function addName(){
+  var x= document.getElementById("userInput").value.toLowerCase();
+    document.getElementById("userInput").value="";
+  if (fruits.indexOf(x)<5){
+    fruits.push(x)
+    document.getElementById("results").innerHTML=fruits;
+  }
+else{
+  document.getElementById("results").innerHTML="too much people"
+   document.getElementById("results").innerHTML="";
+}
+  
+}
+
+function removeName(){
+ var x= document.getElementById("userInput").value.toLowerCase();
+    document.getElementById("userInput").value="";
+if (fruits.indexOf(x)!=-1){
+
+var a=fruits.indexOf(x);
+  fruits.splice(a,1);
+  document.getElementById('results').innerHTML=fruits;
+}
+  
+  else{
+    document.getElementById('results').innerHTML="add more people";
+    document.getElementById("userInput").value="";
+  }
+}
+</script>
+</body>
+</html>
