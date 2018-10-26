@@ -14,21 +14,21 @@
   <input type="text" id="userInput">
   <button onclick="addName()">Add Name</button>
   <button onclick="removeName()">Remove name</button>
-<p id="results"></p>
+<h1 id="results"></h1>
 </div>
 <script>
   var fruits = [];
-
+document.getElementById("results").innerHTML=fruits;
 function addName(){
   var x= document.getElementById("userInput").value.toLowerCase();
     document.getElementById("userInput").value="";
-  if (fruits.indexOf(x)<5){
+  if (fruits.indexOf(x)< 5){
     fruits.push(x)
     document.getElementById("results").innerHTML=fruits;
   }
 else{
-  document.getElementById("results").innerHTML="too much people"
-   document.getElementById("results").innerHTML="";
+  document.getElementById("results").innerHTML="too much people";
+   document.getElementById("userInput").value="";
 }
   
 }
@@ -44,7 +44,7 @@ var a=fruits.indexOf(x);
 }
   
   else{
-    document.getElementById('results').innerHTML="add more people";
+    document.getElementById('results').innerHTML="not in array";
     document.getElementById("userInput").value="";
   }
 }
