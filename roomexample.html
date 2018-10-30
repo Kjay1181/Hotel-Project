@@ -1,0 +1,46 @@
+<html>
+  
+  
+<body>
+  <h1 id="putNumberHere"></h1>
+  
+  <button onclick="addOne()">Add one</button>
+  <button onclick="deleteOne()">delete one</button>
+<script>
+  // I need a global variable to store the number
+
+  var total=0;
+  
+  
+  
+  function addOne(){
+   
+    
+    if(total ==5){
+    
+   
+      document.getElementById('putNumberHere').innerHTML = " you have two many";
+      
+    }
+  else{
+     total++;
+    document.getElementById("putNumberHere").innerHTML=total;
+  }
+    
+  }
+  
+ function deleteOne(){
+  
+   if (total==0){
+       document.getElementById('putNumberHere').innerHTML = " add more";
+  
+   }
+else{
+   total--;
+   document.getElementById('putNumberHere').innerHTML=total;
+ 
+}
+ }
+</script>
+</body>
+</html>
