@@ -18,12 +18,14 @@
 </div>
 <script>
   var fruits = [];
-document.getElementById("results").innerHTML=fruits;
+
+
 function addName(){
   var x= document.getElementById("userInput").value.toLowerCase();
     document.getElementById("userInput").value="";
-  if (fruits.indexOf(x)< 5){
-    fruits.push(x)
+  
+  if (fruits.indexOf(x)<3){
+    fruits.push(x);
     document.getElementById("results").innerHTML=fruits;
   }
 else{
