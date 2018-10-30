@@ -1,0 +1,31 @@
+
+<html>
+  
+  
+<body>
+  <h1 id="putNumberHere"></h1>
+  <button onclick="addOne()">Add one</button>
+<script>
+  // I need a global variable to store the number
+  var total=0;
+  
+  
+  // i need a function
+  function addOne(){
+    // I want to add 1+ to the total variable
+    total++;
+    // I want to check if total is less than 5
+    if(total <=5){
+      //display the total to the screen
+      document.getElementById('putNumberHere').innerHTML= total;
+      
+      
+    }
+  else{
+    document.getElementById('putNumberHere').innerHTML= " you have two many";
+  }
+    
+  }
+</script>
+</body>
+</html>
