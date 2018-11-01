@@ -14,23 +14,27 @@
   <input type="text" id="userInput">
   <button onclick="addName()">Add Name</button>
   <button onclick="removeName()">Remove name</button>
-<h1 id="results"></h1>
+<p id="results"></p>
+<ol id="room"></ol>
 </div>
 <script>
   var fruits = [];
 
 
 function addName(){
-  var x= document.getElementById("userInput").value.toLowerCase();
-    document.getElementById("userInput").value="";
+  var x= document.getElementById("userInput").value.toLowerCase();// gets the value that was inputted in from user
+    document.getElementById("userInput").value="";//clears the input box
   
-  if (fruits.indexOf(x)<3){
-    fruits.push(x);
-    document.getElementById("results").innerHTML=fruits;
+  if (fruits.length===4){
+    
+  document.getElementById("results").innerHTML="too much people";// when array =4 is will display "too much people"
+   document.getElementById("userInput").value="";//clears the input
+    
   }
 else{
-  document.getElementById("results").innerHTML="too much people";
-   document.getElementById("userInput").value="";
+ 
+ fruits.push(x);// array doesn't equal 4 it will get x and push it in the array
+    document.getElementById("room").innerHTML=fruits;// displays the lists as an array
 }
   
 }
@@ -38,16 +42,15 @@ else{
 function removeName(){
  var x= document.getElementById("userInput").value.toLowerCase();
     document.getElementById("userInput").value="";
-if (fruits.indexOf(x)!=-1){
-
-var a=fruits.indexOf(x);
-  fruits.splice(a,1);
-  document.getElementById('results').innerHTML=fruits;
+if (fruits.indexOf(x)===-1){
+  document.getElementById('results').innerHTML="not in array";
+    document.getElementById("userInput").value="";
 }
   
   else{
-    document.getElementById('results').innerHTML="not in array";
-    document.getElementById("userInput").value="";
+  var a=fruits.indexOf(x);
+  fruits.splice(a,1);
+  document.getElementById('results').innerHTML=fruits;
   }
 }
 </script>
