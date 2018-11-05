@@ -1,0 +1,59 @@
+
+<html>
+  <head>
+    <style>
+      #one{
+        background-color:red;
+        height:500px;
+        width:500px;
+      }
+    </style>
+  </head>
+
+<body>
+  <div id="one">
+  <input type="text" id="userInput">
+  <button onclick="addName()">Add Name</button>
+  <button onclick="removeName()">Remove name</button>
+<p id="results"></p>
+<ol id="room"></ol>
+</div>
+<script>
+  var fruits = [];
+    
+function addName(){
+  var x= document.getElementById("userInput").value.toLowerCase();// gets the value that was inputted in from user
+    document.getElementById("userInput").value="";//clears the input box
+  
+  if (fruits.length===4){
+    
+  document.getElementById("results").innerHTML= "too much people";// when array =4 is will display "too much people"
+   document.getElementById("userInput").value= "";//clears the input
+    
+  }
+else{
+ 
+ fruits.push(x);// array doesn't equal 4 it will get x and push it in the array
+    document.getElementById("results").innerHTML=fruits;// displays the lists as an array
+}
+  
+}
+function removeName(){
+  var x= document.getElementById("userInput").value.toLowerCase();
+ document.getElementById("userInput").value="";
+if (fruits.indexOf(x)===-1){
+ window.alert("not in array");
+    document.getElementById("userInput").value="";// clears the input field
+ 
+  
+}
+  
+  else{
+ var a=fruits.indexOf(x);// gets the index of x
+  fruits.splice(a,1);
+  document.getElementById('results').innerHTML=fruits;
+  }
+}
+</script>
+</body>
+</html>
