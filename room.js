@@ -1,33 +1,33 @@
-var names = [];
+var names = [];// array
 function addName(){
-  var x= document.getElementById("userInput").value.toLowerCase();
-    document.getElementById("userInput").value="";
+  var x= document.getElementById("userInput").value.toLowerCase();//gets the value from the input field
+    document.getElementById("userInput").value="";//clears input field
   
   if (names.length==4){
-     window.alert("Room is full");
-   document.getElementById("userInput").value="";
+     window.alert("Room is full");// room has 4 things this displays
+   document.getElementById("userInput").value="";//clears the input field
     
   }
 else {
 
-  names.push(x);
-    document.getElementById("results").innerHTML=names;
+  names.push(x);// array doesn't equal 4 pushes value into array
+    document.getElementById("results").innerHTML=names;//displays it
 
   
 }
 }
 
 function removeName(){
- var x= document.getElementById("userInput").value.toLowerCase();
-    document.getElementById("userInput").value="";
+ var x= document.getElementById("userInput").value.toLowerCase();// get value
+    document.getElementById("userInput").value="";//Clears input field
 if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results').innerHTML=names;
+var a=names.indexOf(x);//gets index position
+  names.splice(a,1);//removes inputted name
+  document.getElementById('results').innerHTML=names;//displays value
 }
   
   else{
-    window.alert("Please check in");
+    window.alert("Please check in");// when array is empty this will popup
       }
 }
 
