@@ -1,30 +1,85 @@
 <html>
-<head>
-  <style>
-    #one{
-      height:50vh;
-      width:20vw;
-      background-color:red;
-    }
-  </style>
-</head>
-  
-  <body>
-    <h1>Kevin's Famous hotel</h1>
- <script src="hotel.js"></script>
- 
-<div id="one">
- <p>Room 1</p>
-  <input type="text" id="userInput">
- <button onclick="addName()">Check in</button>
-  <button onclick="removeName()">GoodBye</button>
-  <ol id="kj"></ol>
- <p id="check"></p>
- </div>
+  <head>
+    <style>
+      #one{
+        background-color:017287;
+        height:45vh;
+        width:15vw;
+        position:relative;
+        float:left;
+      }
+ #two{
+    background-color:017287;
+        position:absolute;
+        height:45vh;
+        width:15vw;
+       left:250px;
+ }
+ #three{
+    background-color:017287;
+        position:absolute;
+        height:45vh;
+        width:15vw;
+       left:500px;
+ }
+ img{
+   width:80px;
+   height:80px;
 
+   
+ }
+    body{
+      background-color:gray;
+    }
+    
+    #title{
+      position:relative;
+    left:500px;
+      
+    }
+    </style>
  
- 
- 
- 
-  </body>
+  </head>
+
+<body>
+  <img src="logo_transparent.png">
+ <h1 id="title">Welcome to Kevin's Famous Hotel</h1>
+  
+  <div id="one">
+  <h1>Room one</h1>
+  <input type="text" id="userInput">
+  <button onclick="addName()">Add</button>
+  <button onclick="removeName()">Remove </button>
+  <button onclick="getOut()">Cleanup</button>
+<h2 id="results"></h2>
+<p id="check"></p>
+
+</div>
+  
+  <div id="two">
+  <h1>Room two</h1>
+  <input type="text" id="userInput1">
+  <button onclick="addName1()">Add</button>
+  <button onclick="removeName1()">Remove </button>
+  <button onclick="getOut1()">Cleanup</button>
+<h2 id="results1"></h2>
+<p id="check1"></p>
+
+</div>
+<div id="three">
+  <h1>Room three</h1>
+  <input type="text" id="userInput2">
+  <button onclick="addName2()">Add</button>
+  <button onclick="removeName2()">Remove </button>
+  <button onclick="getOut2()">Cleanup</button>
+<h2 id="results2"></h2>
+<p id="check2"></p>
+
+</div>
+<script src="room.js">
+  
+
+</script>
+</body>
 </html>
+
