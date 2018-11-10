@@ -5,36 +5,62 @@
         background-color:017287;
         height:45vh;
         width:15vw;
-        position:relative;
+        margin-left:25px;
         float:left;
+        
+        
       }
  #two{
     background-color:017287;
         position:absolute;
         height:45vh;
         width:15vw;
-       left:250px;
+        margin-left:250px;
  }
  #three{
     background-color:017287;
         position:absolute;
         height:45vh;
         width:15vw;
-       left:500px;
+       margin-left:475px;
+ }
+
+ #four{
+       background-color:017287;
+        position:absolute;
+        height:45vh;
+        width:15vw;
+       margin-left:700px;
+       
+ }
+ #five{
+   background-color:017287;
+        position:absolute;
+        height:45vh;
+        width:15vw;
+       margin-left:925px;
+ }
+  #six{
+   background-color:017287;
+        position:absolute;
+        height:45vh;
+        width:15vw;
+       margin-left:1150px;
  }
  img{
    width:80px;
    height:80px;
-
    
  }
     body{
       background-color:gray;
+      
     }
     
     #title{
       position:relative;
-    left:500px;
+   top:0px;
+    left:400px;
       
     }
     </style>
@@ -42,7 +68,7 @@
   </head>
 
 <body>
-  <img src="logo_transparent.png">
+  <img src="logo.png">
  <h1 id="title">Welcome to Kevin's Famous Hotel</h1>
   
   <div id="one">
@@ -51,6 +77,7 @@
   <button onclick="addName()">Add</button>
   <button onclick="removeName()">Remove </button>
   <button onclick="getOut()">Cleanup</button>
+<button onclick="unlock()">unlock</button>
 <h2 id="results"></h2>
 <p id="check"></p>
 
@@ -62,6 +89,7 @@
   <button onclick="addName1()">Add</button>
   <button onclick="removeName1()">Remove </button>
   <button onclick="getOut1()">Cleanup</button>
+  <button onclick="unlock1()">unlock</button>
 <h2 id="results1"></h2>
 <p id="check1"></p>
 
@@ -72,13 +100,46 @@
   <button onclick="addName2()">Add</button>
   <button onclick="removeName2()">Remove </button>
   <button onclick="getOut2()">Cleanup</button>
+   <button onclick="unlock2()">unlock</button>
 <h2 id="results2"></h2>
 <p id="check2"></p>
 
 </div>
+
+<div id="four">
+  <h1>Room four</h1>
+  <input type="text" id="userInput3">
+  <button onclick="addName3()">Add</button>
+  <button onclick="removeName3()">Remove </button>
+  <button onclick="getOut3()">Cleanup</button>
+   <button onclick="unlock3()">unlock</button>
+<h2 id="results3"></h2>
+<p id="check3"></p>
+
+</div>
+<div id="five">
+  <h1>Room five</h1>
+  <input type="text" id="userInput4">
+  <button onclick="addName4()">Add</button>
+  <button onclick="removeName4()">Remove </button>
+  <button onclick="getOut4()">Cleanup</button>
+   <button onclick="unlock4()">unlock</button>
+<h2 id="results4"></h2>
+<p id="check4"></p>
+</div>
+<div id="six">
+  <h1>Room six</h1>
+  <input type="text" id="userInput5">
+  <button onclick="addName5()">Add</button>
+  <button onclick="removeName5()">Remove </button>
+  <button onclick="getOut5()">Cleanup</button>
+   <button onclick="unlock5()">unlock</button>
+<h2 id="results5"></h2>
+<p id="check5"></p>
+</div>
+
 <script src="room.js">
   
-
 </script>
 </body>
 </html>
