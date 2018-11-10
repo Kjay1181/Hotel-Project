@@ -1,4 +1,4 @@
-var names = [];//empty array
+var names = [];
 function addName(){
   var x= document.getElementById("userInput").value.toLowerCase();//gets the value from the input field
     document.getElementById("userInput").value="";//clears input field
@@ -15,7 +15,7 @@ else {
 
   
 }
-}// allows you to add your name to room 1
+}
 
 function removeName(){
  var x= document.getElementById("userInput").value.toLowerCase();// get value
@@ -29,7 +29,7 @@ var a=names.indexOf(x);//gets index position
   else{
     window.alert("Please check in");// when array is empty this will popup
       }
-}// allows you to delete your name from room 1
+}
 
 function getOut(){
   names.splice(0,names.length);
@@ -37,12 +37,12 @@ function getOut(){
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock(){
   window.alert("Room is now clean");
 document.getElementById("userInput").disabled=false;
-}// unlocks room
+}
 
 
 function addName1(){
@@ -60,7 +60,7 @@ else {
     document.getElementById("results1").innerHTML=names;
 
 }
-}// allows you to add your name to room 2
+}
 
 function removeName1(){
  var x= document.getElementById("userInput1").value.toLowerCase();
@@ -74,20 +74,20 @@ var a=names.indexOf(x);
   else{
     window.alert("Please check in");
       }
-}// allows you to delete your name from room 2
+}
 
 function getOut1(){
   names.splice(0,names.length);
-  document.getElementById("results").innerHTML=names;
+  document.getElementById("results1").innerHTML=names;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput1").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock1(){
   window.alert("Room is now clean");
 document.getElementById("userInput1").disabled=false;
-}// unlocks room
+}
 
 
 function addName2(){
@@ -105,7 +105,7 @@ else {
     document.getElementById("results2").innerHTML=names;
 
 }
-}// allows you to add your name to room 3
+}
 
 function removeName2(){
  var x= document.getElementById("userInput2").value.toLowerCase();
@@ -119,21 +119,20 @@ var a=names.indexOf(x);
   else{
     window.alert("Please check in");
       }
-}// allows you to delete your name from room 3
+}
 
 function getOut2(){
   names.splice(0,names.length);
-  document.getElementById("results").innerHTML=names;
+  document.getElementById("results2").innerHTML=names;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput2").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock2(){
   window.alert("Room is now clean");
 document.getElementById("userInput2").disabled=false;
-}// unlocks room
-
+}
 
 function addName3(){
   var x= document.getElementById("userInput3").value.toLowerCase();
@@ -150,7 +149,7 @@ else {
     document.getElementById("results3").innerHTML=names;
 
 }
-}// allows you to add your name to room 4
+}
 
 function removeName3(){
  var x= document.getElementById("userInput3").value.toLowerCase();
@@ -164,7 +163,7 @@ var a=names.indexOf(x);
   else{
     window.alert("Please check in");
       }
-}// allows you to delete your name from room 4
+}
 
 function getOut3(){
   names.splice(0,names.length);
@@ -172,12 +171,12 @@ function getOut3(){
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput3").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock3(){
   window.alert("Room is now clean");
 document.getElementById("userInput3").disabled=false;
-}// unlocks room
+}
 
 
 function addName4(){
@@ -195,7 +194,7 @@ else {
     document.getElementById("results4").innerHTML=names;
 
 }
-}// allows you to add your name to room 5
+}
 
 function removeName4(){
  var x= document.getElementById("userInput4").value.toLowerCase();
@@ -209,7 +208,7 @@ var a=names.indexOf(x);
   else{
     window.alert("Please check in");
       }
-}// allows you to delete your name from room 5
+}
 
 function getOut4(){
   names.splice(0,names.length);
@@ -217,12 +216,12 @@ function getOut4(){
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput4").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock4(){
   window.alert("Room is now clean");
 document.getElementById("userInput4").disabled=false;
-}// unlocks room
+}
 
 
 function addName5(){
@@ -240,9 +239,21 @@ else {
     document.getElementById("results5").innerHTML=names;
 
 }
-}// allows you to add your name to room 6
+}
 
-function removeName5()// allows you to delete your name from room 6
+function removeName5(){
+ var x= document.getElementById("userInput5").value.toLowerCase();
+    document.getElementById("userInput5").value="";
+if (names.indexOf(x)!=-1){
+var a=names.indexOf(x);
+  names.splice(a,1);
+  document.getElementById('results5').innerHTML=names;
+}
+  
+  else{
+    window.alert("Please check in");
+      }
+}
 
 function getOut5(){
   names.splice(0,names.length);
@@ -250,11 +261,11 @@ function getOut5(){
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput5").disabled=true;
   
-}//removes all names from room and locks room
+}
 
 function unlock5(){
   window.alert("Room is now clean");
 document.getElementById("userInput5").disabled=false;
-}// unlocks room
+}
 
 
