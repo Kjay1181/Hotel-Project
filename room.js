@@ -3,6 +3,7 @@ var roomTwo=[];
 var roomThree=[];
 var roomFour=[];
 var roomFive=[];
+var roomSix=[];
 function addName(){
   var x= document.getElementById("userInput").value.toLowerCase();//gets the value from the input field
     document.getElementById("userInput").value="";//clears input field
@@ -14,8 +15,8 @@ function addName(){
   }
 else {
 
-  names.unshift(x);// array doesn't equal 4 pushes value into array
-    document.getElementById("results").innerHTML=names;//displays it
+  roomOne.unshift(x);// array doesn't equal 4 pushes value into array
+    document.getElementById("results").innerHTML=roomOne;//displays it
 
   
 }
@@ -24,10 +25,10 @@ else {
 function removeName(){
  var x= document.getElementById("userInput").value.toLowerCase();// get value
     document.getElementById("userInput").value="";//Clears input field
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);//gets index position
-  names.splice(a,1);//removes inputted name
-  document.getElementById('results').innerHTML=names;//displays value
+if (roomOne.indexOf(x)!=-1){
+var a=roomOne.indexOf(x);//gets index position
+  roomOne.splice(a,1);//removes inputted name
+  document.getElementById('results').innerHTML=roomOne;//displays value
 }
   
   else{
@@ -36,8 +37,8 @@ var a=names.indexOf(x);//gets index position
 }
 
 function getOut(){
-  names.splice(0,names.length);
-  document.getElementById("results").innerHTML=names;
+  roomOne.splice(0,roomOne.length);
+  document.getElementById("results").innerHTML=roomOne;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput").disabled=true;
   
@@ -53,15 +54,15 @@ function addName1(){
   var x= document.getElementById("userInput1").value.toLowerCase();
     document.getElementById("userInput1").value="";
   
-  if (names.length==4){
+  if (roomTwo.length==4){
      window.alert("Room is full");
    document.getElementById("userInput1").value="";
     
   }
 else {
 
-  names.unshift(x);
-    document.getElementById("results1").innerHTML=names;
+  roomTwo.unshift(x);
+    document.getElementById("results1").innerHTML=roomTwo;
 
 }
 }
@@ -69,10 +70,10 @@ else {
 function removeName1(){
  var x= document.getElementById("userInput1").value.toLowerCase();
     document.getElementById("userInput1").value="";
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results1').innerHTML=names;
+if (roomTwo.indexOf(x)!=-1){
+var a=roomTwo.indexOf(x);
+  roomTwo.splice(a,1);
+  document.getElementById('results1').innerHTML=roomTwo;
 }
   
   else{
@@ -81,8 +82,8 @@ var a=names.indexOf(x);
 }
 
 function getOut1(){
-  names.splice(0,names.length);
-  document.getElementById("results1").innerHTML=names;
+  roomTwo.splice(0,roomTwo.length);
+  document.getElementById("results1").innerHTML=roomTwo;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput1").disabled=true;
   
@@ -98,15 +99,15 @@ function addName2(){
   var x= document.getElementById("userInput2").value.toLowerCase();
     document.getElementById("userInput2").value="";
   
-  if (names.length==4){
+  if (roomThree.length==4){
      window.alert("Room is full");
    document.getElementById("userInput2").value="";
     
   }
 else {
 
-  names.unshift(x);
-    document.getElementById("results2").innerHTML=names;
+  roomThree.unshift(x);
+    document.getElementById("results2").innerHTML=roomThree;
 
 }
 }
@@ -114,10 +115,10 @@ else {
 function removeName2(){
  var x= document.getElementById("userInput2").value.toLowerCase();
     document.getElementById("userInput2").value="";
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results2').innerHTML=names;
+if (roomThree.indexOf(x)!=-1){
+var a=roomThree.indexOf(x);
+  roomThree.splice(a,1);
+  document.getElementById('results2').innerHTML=roomThree;
 }
   
   else{
@@ -126,8 +127,8 @@ var a=names.indexOf(x);
 }
 
 function getOut2(){
-  names.splice(0,names.length);
-  document.getElementById("results2").innerHTML=names;
+  roomThree.splice(0,roomThree.length);
+  document.getElementById("results2").innerHTML=roomThree;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput2").disabled=true;
   
@@ -142,15 +143,15 @@ function addName3(){
   var x= document.getElementById("userInput3").value.toLowerCase();
     document.getElementById("userInput3").value="";
   
-  if (names.length==4){
+  if (roomFour.length==4){
      window.alert("Room is full");
    document.getElementById("userInput3").value="";
     
   }
 else {
 
-  names.unshift(x);
-    document.getElementById("results3").innerHTML=names;
+  roomFour.unshift(x);
+    document.getElementById("results3").innerHTML=roomFour;
 
 }
 }
@@ -158,10 +159,10 @@ else {
 function removeName3(){
  var x= document.getElementById("userInput3").value.toLowerCase();
     document.getElementById("userInput3").value="";
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results3').innerHTML=names;
+if (roomFour.indexOf(x)!=-1){
+var a=roomFour.indexOf(x);
+  roomFour.splice(a,1);
+  document.getElementById('results3').innerHTML=roomFour;
 }
   
   else{
@@ -170,8 +171,8 @@ var a=names.indexOf(x);
 }
 
 function getOut3(){
-  names.splice(0,names.length);
-  document.getElementById("results3").innerHTML=names;
+  roomFour.splice(0,roomFour.length);
+  document.getElementById("results3").innerHTML=roomFour;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput3").disabled=true;
   
@@ -187,15 +188,15 @@ function addName4(){
   var x= document.getElementById("userInput4").value.toLowerCase();
     document.getElementById("userInput4").value="";
   
-  if (names.length==4){
+  if (roomFive.length==4){
      window.alert("Room is full");
    document.getElementById("userInput4").value="";
     
   }
 else {
 
-  names.unshift(x);
-    document.getElementById("results4").innerHTML=names;
+  roomFive.unshift(x);
+    document.getElementById("results4").innerHTML=roomFive;
 
 }
 }
@@ -203,10 +204,10 @@ else {
 function removeName4(){
  var x= document.getElementById("userInput4").value.toLowerCase();
     document.getElementById("userInput4").value="";
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results4').innerHTML=names;
+if (roomFive.indexOf(x)!=-1){
+var a=roomFive.indexOf(x);
+  roomFive.splice(a,1);
+  document.getElementById('results4').innerHTML=roomFive;
 }
   
   else{
@@ -215,8 +216,8 @@ var a=names.indexOf(x);
 }
 
 function getOut4(){
-  names.splice(0,names.length);
-  document.getElementById("results4").innerHTML=names;
+  roomFive.splice(0,roomFive.length);
+  document.getElementById("results4").innerHTML=roomFive;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput4").disabled=true;
   
@@ -232,15 +233,15 @@ function addName5(){
   var x= document.getElementById("userInput5").value.toLowerCase();
     document.getElementById("userInput5").value="";
   
-  if (names.length==4){
+  if (roomSix.length==4){
      window.alert("Room is full");
    document.getElementById("userInput5").value="";
     
   }
 else {
 
-  names.unshift(x);
-    document.getElementById("results5").innerHTML=names;
+  roomSix.unshift(x);
+    document.getElementById("results5").innerHTML=roomSix;
 
 }
 }
@@ -248,10 +249,10 @@ else {
 function removeName5(){
  var x= document.getElementById("userInput5").value.toLowerCase();
     document.getElementById("userInput5").value="";
-if (names.indexOf(x)!=-1){
-var a=names.indexOf(x);
-  names.splice(a,1);
-  document.getElementById('results5').innerHTML=names;
+if (roomSix.indexOf(x)!=-1){
+var a=roomSix.indexOf(x);
+  roomSix.splice(a,1);
+  document.getElementById('results5').innerHTML=roomSix;
 }
   
   else{
@@ -260,8 +261,8 @@ var a=names.indexOf(x);
 }
 
 function getOut5(){
-  names.splice(0,names.length);
-  document.getElementById("results5").innerHTML=names;
+  roomSix.splice(0,roomSix.length);
+  document.getElementById("results5").innerHTML=roomSix;
   window.alert("Room is locked for cleaning");
 document.getElementById("userInput5").disabled=true;
   
@@ -271,5 +272,3 @@ function unlock5(){
   window.alert("Room is now clean");
 document.getElementById("userInput5").disabled=false;
 }
-
-
