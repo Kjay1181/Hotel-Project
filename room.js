@@ -1,16 +1,20 @@
-var names = [];
+var roomOne = [];
+var roomTwo=[];
+var roomThree=[];
+var roomFour=[];
+var roomFive=[];
 function addName(){
   var x= document.getElementById("userInput").value.toLowerCase();//gets the value from the input field
     document.getElementById("userInput").value="";//clears input field
   
-  if (names.length==4){
+  if (roomOne.length==4){
      window.alert("Room is full");// room has 4 things this displays
    document.getElementById("userInput").value="";//clears the input field
     
   }
 else {
 
-  names.push(x);// array doesn't equal 4 pushes value into array
+  names.unshift(x);// array doesn't equal 4 pushes value into array
     document.getElementById("results").innerHTML=names;//displays it
 
   
@@ -56,7 +60,7 @@ function addName1(){
   }
 else {
 
-  names.push(x);
+  names.unshift(x);
     document.getElementById("results1").innerHTML=names;
 
 }
@@ -101,7 +105,7 @@ function addName2(){
   }
 else {
 
-  names.push(x);
+  names.unshift(x);
     document.getElementById("results2").innerHTML=names;
 
 }
@@ -145,7 +149,7 @@ function addName3(){
   }
 else {
 
-  names.push(x);
+  names.unshift(x);
     document.getElementById("results3").innerHTML=names;
 
 }
@@ -190,7 +194,7 @@ function addName4(){
   }
 else {
 
-  names.push(x);
+  names.unshift(x);
     document.getElementById("results4").innerHTML=names;
 
 }
@@ -235,7 +239,7 @@ function addName5(){
   }
 else {
 
-  names.push(x);
+  names.unshift(x);
     document.getElementById("results5").innerHTML=names;
 
 }
